@@ -1,5 +1,7 @@
 import ctypes
 
+print("Начало работы программы")
+
 cal_primes_lib = ctypes.CDLL("./libcalc.so")
 cal_primes_lib.calculate_primes.argtypes = [ctypes.POINTER(ctypes.c_int), ctypes.c_int]
 
