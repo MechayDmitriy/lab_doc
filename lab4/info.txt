@@ -1,0 +1,5 @@
+gcc -c -fPIC calculate_primes.c -o calculate_primes.o
+gcc calculate_primes.o -shared -o libcalc.so
+
+
+Type conversions
